@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form method="post" action="https://formspree.io/svitlyk.m.r@gmail.com" autocomplete="on">
+  <fieldset>
+    <legend>Fill your contacts:</legend>
+    <input type="text" name="name" placeholder="Your name" pattern="[A-Z]{1}[a-z]{1,}" title="Use only characters like: 'Anna'" required>
+    <br>
+    <input type="tel" name="tel" placeholder="Your telphone number" required>
+    <br>
+    <input type="email" name="email" placeholder="Your email" required>
+  </fieldset>
+  <fieldset>
+    <legend>Please answer some questions:</legend>
+    <ol>
+      <li>
+        <p>Choose your country from the list or enter your own:</p>
+        <input list="countries" name="country" placeholder="Your country">
+        <datalist id="countries">
+          <option value="Ukraine"></option>
+          <option value="USA"></option>
+          <option value="Sweden"></option>
+          <option value="Other"></option>
+        </datalist>
+      </li>
+      <li>
+        <p>Choose your sex:</p>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+      </li>
+      <li>
+        <p>Enter your age:</p>
+        <input type="number" name="age" placeholder="Your age" required>
+      </li>
+      <li>
+        <p>Choose your favourite color:</p>
+        <input type="color" name="color">
+      </li>
+      <li>
+        <p>Choose your pet:</p>
+        <input type="checkbox" name="pet" value="dog" id="dog">
+        <label for="dog">Dog</label><br>
+        <input type="checkbox" name="pet" value="cat" id="cat">
+        <label for="cat">Cat</label><br>
+        <input type="checkbox" name="pet" value="turtle" id="turtle">
+        <label for="turtle">Turtle</label><br>
+        <input type="checkbox" name="pet" value="crocodile" id="crocodile">
+        <label for="crocodile">Crocodile</label><br>
+        <input type="text" name="pet" id="otherPet">
+        <label for="otherPet">Enter your variant</label>
+      </li>
+    </ol>
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+<a href="index.html">Back to the main page.</a>
+</body>
+</html>
